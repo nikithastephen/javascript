@@ -1,0 +1,62 @@
+<html>
+    <head>
+        <title> Registration</title>
+        <script src="validate.js"></script>
+    </head>
+<body>
+    
+    <h1>REGISTRATION FORM</h1>
+    <form name="myform" onsubmit=" return validateForm()">     
+          <table border="1">
+                <tr>
+                <td>NAME:</td>  
+                <td><input type="text" name="name" id="name"></input>
+                    <p id="namewarning" style="color:red;"></p>
+                </td>
+                </tr>
+                <tr>
+                <td>PHONE NUMBER:</td>
+                <td><input type="text"  name="phno:" id="phno"></input>
+                    <p id ="phonewarning" style="color:red;"></p>
+               
+                </td>
+                </tr>
+                <tr>
+                    <td>DATE:</td>
+                    <td><input type="text" name="dob" id="dob"/></input>
+                    <p id="datewarning" style="color:red;"></p>
+                    </td>
+                </tr>
+                <tr>
+                    <td>PINCODE:</td>
+                    <td><input type="text" name="pin" id="pin"/></input>
+                    <p id="pinwarning" style="color:red;"></p>
+                    </td>
+                </tr>
+                <tr>
+                    <td>EMAIL:</td>
+                    <td><input type="text" name="email" id="email"/></input>
+                    <p id="emailwarning" style="color:red;"></p>
+                    </td>
+                </tr>
+                <tr>
+                    <td>PASSWORD:</td>
+                    <td><input type="password" name="password" id="password"/></input>
+                    <p id="passwarning" style="color:red;"></p>
+                    </td>
+                </tr>
+                <tr>
+                    <td>COURSE:</td>
+                    <td><input type="radio" value="mca" name="course">Mca
+                        <input type="radio" value="mtech" name="course">M.tech
+                        <p id="coursewarning" style="color:red;"></p>
+                    </td>
+                </tr>
+               </table>
+               <BR/>
+                <button type="submit" name="submit" value="submit">SUBMIT</button>
+                <button type="reset" name="reset" value="reset">RESET</button>
+        
+    </form>
+</body>    
+</html>
