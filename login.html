@@ -1,0 +1,61 @@
+<html>
+    <head>
+        <title>login</title>
+    
+
+        <style>
+        input:hover{
+                background-color:grey;
+        }
+        
+        legend{
+            padding-left:10px;
+            padding-top:10px; 
+            padding-bottom:10px;
+            padding-right:10px;
+            border-width:0px;
+            margin-top:10px ;
+        }
+    </style>
+    </head>
+    <body>
+     <script>
+        function loginvalidation(){
+        var x=document.myform.username.value;
+        var atposition=x.indexOf("@");
+        var dotposition=x.lastIndexOf(".");
+        if (atposition<1 || dotposition<atposition+2 || dotposition+2>=x.length){
+        alert("Please enter a valid e-mail address");
+        return false;
+      
+    }
+
+    var password=document.myform.password.value;
+    if(password.length<6){
+    alert("Password must be at least 6 characters long.");
+    return false; 
+    alert("logged in successfully");
+    return true;  
+    }  
+        }       
+     </script>
+
+        
+            <form method="post" name="myform"  onsubmit="return loginvalidation()">
+                <fieldset>
+                <legend>LOGIN</legend>
+                <label for="username">Username</label>
+                <input type="text" name="username" />
+                <br/>
+                <br/>
+                <label for="password">Password</label>
+                <input type="password" name="password" />
+                <br/>
+                <button type="submit" name="submit" value="submit">LOGIN</button>
+            
+        </fieldset>
+    </form>
+    
+
+    </body>
+</html>
